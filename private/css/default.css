@@ -1,0 +1,401 @@
+html {
+    background: 	#d6d6d6;
+    margin:             0;
+    padding:            0;
+}
+
+body {
+    margin:             0;
+    padding:            0;
+}
+
+/*  ----HEADER----   */
+#header
+{
+    position:           relative;
+    background-color:   #004212;
+    margin:             0 auto 20px auto;
+    width:              80%;
+    height:             70px;
+}
+
+#header > div
+{
+    position:           absolute;
+    top:                18px;
+    right:              10px;
+    height:		50px;
+}
+
+#header > div > a
+{
+    display:		block;
+    padding:		15px 15px;
+    height:		20px;
+    color:		#ffffff;
+    text-decoration:	none;
+    text-align:		center;
+    font-family:	Inhirit;
+    font-size:		18px;
+    letter-spacing:	0.05ex;
+}
+
+#header > div > a:hover
+{
+    color:		#006200;
+    border:		1px solid;
+    border-color:	#d6d6d6;
+    background-color:	#d6d6d6;
+}
+
+#header > ol
+{
+    margin:		0 auto;
+    padding:		0;
+    width:		100%;
+    list-style-type:	none;
+}
+
+#header > ol:after
+{
+    content:		'';
+    display:		block;
+    clear:		both;
+}
+
+#header > ol > li
+{
+    margin:             20px 0 0 10px;
+    float:		left;
+    width:		auto;
+    height:		50px;
+    text-overflow: 	ellipsis;
+    -o-text-overflow: 	ellipsis;
+    -webkit-text-overflow: 	ellipsis;
+    white-space: 	nowrap;
+    overflow: 		hidden;
+    background: 	#004212;
+}
+
+#header > ol > li > a
+{
+    display:		block;
+    padding:		15px 15px;
+    height:		20px;
+    color:		#ffffff;
+    text-decoration:	none;
+    text-align:		center;
+    font-family:	Inhirit;
+    font-size:		18px;
+    letter-spacing:	0.05ex;
+}
+
+#header > ol > li:hover > a
+{
+    color:		#006200;
+    border:		1px solid;
+    border-color:	#575757;
+    background-color:	#d6d6d6;
+}
+
+#header > ol > li > a[id=selected]
+{
+    color:              #006200 !important;
+    border:             1px solid;
+    border-color:       #575757;
+    background-color:   #d6d6d6;		
+}
+
+/*   ----CONTENT----   */
+#content
+{
+    margin:		0 auto;
+    margin-bottom:	5px;
+    width:		80%;
+    min-height:		4px;
+    height:		auto;
+    clear:		both;
+    height:		auto;
+    background:		#c0c0c0;
+    -webkit-border-radius: 	15px 10px;
+    -o-border-radius: 		15px 10px;
+    -moz-border-radius: 	15px 10px;
+    border-radius:		15px 10px;
+    -webkit-box-shadow:		7px 5px 15px 6px #808080;
+    -moz-box-shadow:		7px 5px 15px 6px #808080;
+    box-shadow:			7px 5px 15px 6px #808080;
+}
+
+#content-top
+{
+    padding:			10px;	
+    width:			auto;
+    -webkit-border-top-left-radius:	15px 15px;
+    -webkit-border-top-right-radius:    10px 10px;
+    -o-border-top-left-radius:          15px 15px;
+    -o-border-top-right-radius:         10px 10px;
+    -moz-border-top-left-radius:        15px 15px;
+    -moz-border-top-right-radius:       10px 10px;
+    border-top-left-radius:             15px 15px;
+    border-top-right-radius:            10px 10px;
+    background:			#004212;
+    text-align:			center;
+    font-family:		Tahoma;
+    font-size:                  22px;
+    font-weight:    		bold;
+    letter-spacing:		0.15ex;
+    color:			#dadada;
+}
+
+#content > h3
+{
+    font-size:      26px;
+    color:          #847049;
+    margin-top:     40px;
+    text-align:     center;	
+}
+
+/*   ----getNews----   */
+#content > table
+{
+    font-size:      18px;
+    margin:         10px 15px;
+    width:          auto;  
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#content > table tr
+{
+    border-left:      1px solid #666666;
+    border-right:     1px solid #666666;
+}
+
+#content > table tr:last-child
+{
+    border-bottom:      1px solid #666666;
+}
+
+#content td
+{
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+#content > table tr:nth-of-type(2n+1)
+{
+    background-color:   #dadada;
+}
+
+#content > table p
+{
+    margin:         15px 0;
+    font-size:      20px;
+}
+
+#content > table a
+{
+    padding:        5px 15px; 
+    background:     #808080;
+    color:          #111;
+    cursor:         pointer;
+    -webkit-border-radius: 5px;
+    border-radius:  5px; 
+    text-decoration: none;
+    font-size:      15px;
+}
+
+#section > td
+{
+    text-align:     center;
+    background-color: #575757 !important;
+    padding:        10px;
+    font-weight:    bold;
+    font-size:      20px;
+}
+
+#date
+{
+    font-size:      15px;
+}
+
+
+/*   ----ADDNEWS----   */
+#addMessage
+{
+    width:          85%;
+    left:           25%;
+    margin:         0 auto;
+}
+
+#addMessage table
+{
+    width:          100%;
+    font-size:      20px;
+}
+
+#addMessage input[type=text] {
+    padding:        5px; 
+    width:          95%;
+    border:         2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius:  5px;
+}
+
+#addMessage input[type=text]:focus {
+    border-color:   #333;
+}
+
+#addMessage input[type=submit] {
+    padding:        5px 15px;
+    margin-left:    90%;
+    background:     #808080;
+    color:          #111;
+    border:         0 none;
+    cursor:         pointer;
+    -webkit-border-radius: 5px;
+    border-radius:  5px; 
+    font-size:      18px;
+}
+
+#addMessage textarea
+{
+    padding:        5px 15px; 
+    cursor:         pointer;
+    -webkit-border-radius: 5px;
+    border-radius:  5px; 
+    width:          90%;
+    font-size:      15px;
+}
+
+
+
+/*   ----TIMETABLE----   */
+#adminTimetable > form > table
+{
+    border-spacing:     0px;
+    border-collapse:    collapse;
+    font-size:          18px;
+    margin:             0 auto;
+    width:              80%;
+    color:              #333;
+}
+
+#adminTimetable td
+{
+    border:         1px solid black;
+    line-height:    25px;
+    padding-left:   10px;
+    padding-right:  10px;
+    padding-bottom: 5px;
+}
+
+#adminTimetable tr
+{
+    line-height:    10px;
+}
+
+#adminTimetable input[type=text] {
+    padding:        5px; 
+    border:         2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius:  5px;
+}
+
+#adminTimetable input[type=text]:focus {
+    border-color:   #333;
+}
+
+#adminTimetable input[type=submit] {
+    padding:        5px 15px; 
+    margin:         20px auto;
+    position:       relative;
+    left:           85%;
+    background:     #808080; 
+    color:          #111;;
+    border:         0 none;
+    cursor:         pointer;
+    -webkit-border-radius: 5px;
+    border-radius:  5px; 
+    font-size:      18px;
+}
+
+#head > td
+{
+    background-color:   #575757;
+    border-top:         0;
+    text-align:         center;
+    color:              #000;
+}
+
+#head > td:first-child
+{
+    background-color:   #c0c0c0;
+    border-top:         0;
+    border-left:        0;
+}
+
+#hour
+{
+    background-color:   #808080;
+    color:              #000;
+}
+
+/*   ----SETTINGS----   */
+#settin
+{
+    width:          50%;
+    margin:         20px auto;
+    color:          #333;
+}
+
+#settin table
+{
+    width:          100%;
+    text-align:     right;
+    font-size:      20px;
+}
+
+#settin table  td:first-child
+{
+    width:          30%;    
+}
+
+#settin input[type=password]
+{
+    padding:        5px; 
+    width:          95%;
+    border:         2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius:  5px;
+}
+
+#settin input[type=password]:focus 
+{
+    border-color:   #333;
+}
+
+#settin input[type=submit] 
+{
+    padding:        5px 15px; 
+    margin:         10px auto 20px auto;
+    background:     #808080; 
+    color:          #111;
+    border:         0 none;
+    cursor:         pointer;
+    -webkit-border-radius: 5px;
+    border-radius:  5px; 
+    font-size:      16px;
+}
+
+/*   ----FOOTER----   */
+#footer
+{
+    margin:         30px auto 0 auto;
+    padding:        10px 0;
+    width:          80%;
+    height:         50px;
+    color:          #666666;
+}
